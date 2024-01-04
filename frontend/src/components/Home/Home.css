@@ -1,0 +1,160 @@
+.sampleHomePage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:lightskyblue;
+}
+.logo{
+    position: relative;
+    margin:auto;
+    justify-content: center;
+    border-radius: 30px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:150px
+}
+
+.sampleMessage{
+    top:25%;
+    position: absolute;
+    left: 38%;
+}
+.sampleTitle{
+    position: absolute;
+    left:45%;
+    font-size:45px;
+    color:hsl(40, 80%, 42%) ;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+:root {
+  --text-color: rgb(218, 236, 198);
+  --shadow-color: hsla(125, 40%, 52%, 0.4);
+  --btn-color: hsl(40, 80%, 42%);
+  --bg-color: #141218;
+}
+
+
+
+
+.inputBox {
+    margin-top: 300px;
+    width: 300px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: 2px;
+    padding: 20px;
+    font-size: 16px;
+    color: #555;
+    transition: box-shadow 0.3s ease-in-out;
+   
+    }
+
+.button123 {
+  position:relative;
+  
+  padding: 10px 25px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+  font-family: "Source Code Pro";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;  
+  color: var(--text-color);
+  
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 4px; 
+  z-index: 0;  
+  overflow: hidden;   
+}
+
+.button123:focus {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, .button123::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+.button123::after{
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+} 
+
+.right, .left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.right {
+  left: 66%;
+}
+.left {
+  right: 66%;
+}
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+  
+  background-color: var(--bg-color);
+  color:transparent;
+  transition: transform .4s ease-out;
+  transform: translate(0, -90%) rotate(0deg)
+}
+
+.button123:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+.button123 .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+.button123 .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+.button123::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 1s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}

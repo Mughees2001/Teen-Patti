@@ -1,0 +1,54 @@
+/* To center the spinner*/
+.body{
+  text-align: center;
+}
+.pos-center {
+    position: "relative";
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+  }
+  
+  .loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    animation: spin 4s linear infinite;
+    margin-top:190px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(95, 255, 47);
+    /* background-image: url("./Load-img.jpg"); */
+  
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.sampleLoadPage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: "center";
+  background-color:lightskyblue
+}
+.sampleTitle {
+  margin-top: 50px;
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  }
+
+
+  
