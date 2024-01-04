@@ -34,7 +34,6 @@ Develop a Teen Patti game using MERN stack (MongoDB, Express.js, React, Node.js)
 - If a player can't play a valid card, they pick up the pile and skip their turn.
 - The game ends when a player uses all their cards.
 
-
 ## Running the Game
 1. Start server on port 3001.
 2. Launch React front-end on port 3000.
