@@ -1,7 +1,7 @@
 # Teen Patti Game
 
 ## Overview
-Develop a Teen Patti game using MERN stack (MongoDB, Express.js, React, Node.js) with TypeScript for a programming course.
+Developed a Teen Patti game using Express.js, React, and Node.js with TypeScript.
 
 ## Technical Requirements
 - MERN Stack: Express.js, React, Node.js.
