@@ -3,6 +3,9 @@
 ## Overview
 Developed a Teen Patti game using Express.js, React, and Node.js with TypeScript.
 
+![Teen Patti Game](./teenpatti.png)
+
+
 ## Technical Requirements
 - MERN Stack: Express.js, React, Node.js.
 - Socket.IO for real-time communication.
